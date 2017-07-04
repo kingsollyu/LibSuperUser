@@ -82,21 +82,19 @@ public class Shell {
 
             String outputLine;
             while ((outputLine = successResult.readLine()) != null) {
-                //Log.d(TAG, outputLine);
-                result.getOutput().add(outputLine);
                 if (outputLine.startsWith("1DCCADFED7BCBB036C56A4AFB97E906F ")) {
                     result.exitCode = Integer.valueOf(outputLine.substring("1DCCADFED7BCBB036C56A4AFB97E906F ".length()));
                     break;
                 }
+                result.getOutput().add(outputLine);
             }
 
             STDIN.write(("echo 1DCCADFED7BCBB036C56A4AFB97E906F $? >&2\n").getBytes("UTF-8"));
             while ((outputLine = errorResult.readLine()) != null) {
-                //Log.e(TAG, outputLine);
-                result.getErrorOutput().add(outputLine);
                 if (outputLine.startsWith("1DCCADFED7BCBB036C56A4AFB97E906F ")) {
                     break;
                 }
+                result.getErrorOutput().add(outputLine);
             }
 
             return result;
