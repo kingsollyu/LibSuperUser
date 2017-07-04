@@ -3,7 +3,7 @@
 ## 说明
 
 [![](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
-[![](https://jitpack.io/v/kingsollyu/OptionItem.svg)](https://jitpack.io/#kingsollyu/OptionItem)
+[![](https://jitpack.io/v/kingsollyu/LibSuperUser.svg)](https://jitpack.io/#kingsollyu/LibSuperUser)
 [![](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)
 [![](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg?style=flat-square)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
@@ -20,10 +20,10 @@ repositories {
 ```
 
 ### 添加引用
-使用最新版本[![](https://jitpack.io/v/kingsollyu/OptionItem.svg)](https://jitpack.io/#kingsollyu/OptionItem)
+使用最新版本[![](https://jitpack.io/v/kingsollyu/LibSuperUser.svg)](https://jitpack.io/#kingsollyu/LibSuperUser)
 ```
 dependencies {
-    compile 'com.github.kingsollyu:OptionItem:last-version'
+    compile 'com.github.kingsollyu:LibSuperUser:last-version'
 }
 ```
 
