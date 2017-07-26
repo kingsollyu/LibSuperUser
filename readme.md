@@ -20,10 +20,10 @@ repositories {
 ```
 
 ### 添加引用
-使用最新版本[![](https://jitpack.io/v/kingsollyu/LibSuperUser.svg)](https://jitpack.io/#kingsollyu/LibSuperUser)
+使用最新版本：[![](https://jitpack.io/v/kingsollyu/LibSuperUser.svg)](https://jitpack.io/#kingsollyu/LibSuperUser)
 ```
 dependencies {
-    compile 'com.github.kingsollyu:LibSuperUser:last-version'
+    compile 'com.github.kingsollyu:LibSuperUser:[last-version]'
 }
 ```
 
@@ -34,13 +34,13 @@ try {
     Shell.Result result = null;
 
     result= Shell.Su.run("ls /asdfasdf");
-    Log.d(TAG, "命令执行结束：" + result.getExitCode());
+    Log.d(TAG, "finish：" + result.getExitCode());
 
     result = Shell.Su.run("ls -al /system/build.prop");
-    Log.d(TAG, "命令执行结束：" + result.getExitCode());
+    Log.d(TAG, "finish：" + result.getExitCode());
 
     result = Shell.Su.run("ping -c 4 www.baidu.com");
-    Log.d(TAG, "命令执行结束：" + result.getExitCode());
+    Log.d(TAG, "finish：" + result.getExitCode());
 } catch (IOException e) {
     Log.e(TAG, e.getMessage(), e);
 }
@@ -48,13 +48,13 @@ try {
 try {
     Shell.Result result = null;
     result= Shell.Sh.run("ls /system/build.prop");
-    Log.d(TAG, "命令执行结束：" + result.getExitCode());
+    Log.d(TAG, "finish：" + result.getExitCode());
 
     result= Shell.Sh.run("ls -al /sdafsdfasdf");
-    Log.d(TAG, "命令执行结束：" + result.getExitCode());
+    Log.d(TAG, "finish：" + result.getExitCode());
 
     result= Shell.Sh.run("cat /proc/cpuinfo");
-    Log.d(TAG, "命令执行结束：" + result.getExitCode());
+    Log.d(TAG, "finish：" + result.getExitCode());
 } catch (Exception e) {
     Log.e(TAG, e.getMessage(), e);
 }
